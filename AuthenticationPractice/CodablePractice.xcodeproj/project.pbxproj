@@ -41,7 +41,7 @@
 		EA5CCD1327EB6BE7000D91DA = {
 			isa = PBXGroup;
 			children = (
-				EA5CCD1E27EB6BE7000D91DA /* AuthenticationPractice */,
+				EA5CCD1E27EB6BE7000D91DA /* CodablePractice */,
 				EA5CCD1D27EB6BE7000D91DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,7 +54,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA5CCD1E27EB6BE7000D91DA /* AuthenticationPractice */ = {
+		EA5CCD1E27EB6BE7000D91DA /* CodablePractice */ = {
 			isa = PBXGroup;
 			children = (
 				EA5CCD1F27EB6BE7000D91DA /* CodablePracticeApp.swift */,
@@ -65,7 +65,7 @@
 				EA5CCD2327EB6BE9000D91DA /* Assets.xcassets */,
 				EA5CCD2527EB6BE9000D91DA /* Preview Content */,
 			);
-			path = AuthenticationPractice;
+			path = CodablePractice;
 			sourceTree = "<group>";
 		};
 		EA5CCD2527EB6BE9000D91DA /* Preview Content */ = {
@@ -278,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AuthenticationPractice/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CodablePractice/Preview Content\"";
 				DEVELOPMENT_TEAM = WZPRSF7LPK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AuthenticationPractice/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CodablePractice/Preview Content\"";
 				DEVELOPMENT_TEAM = WZPRSF7LPK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
