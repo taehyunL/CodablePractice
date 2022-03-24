@@ -14,15 +14,11 @@ class APIService: ObservableObject {
         fetchData()
     }
     
-    func postData() {
-        
-    }
-    
     func fetchData() {
         guard let url = URL(string: "https://reqres.in/api/users?page=2") else {
             return
         }
-        
+
         downloadData(fromURL: url) { returnData in
             if let data = returnData {
                 let decoder = JSONDecoder()
@@ -37,7 +33,7 @@ class APIService: ObservableObject {
             } else {
                 print("data 없음")
             }
-
+            print(url)
         }
         
     }
@@ -60,6 +56,7 @@ class APIService: ObservableObject {
                 complectionHandler(nil)
                 return
             }
+            print(response.value(forHTTPHeaderField: "Date"))
             complectionHandler(data)
         }
         .resume()

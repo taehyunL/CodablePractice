@@ -21,6 +21,7 @@ class LoginViewModel: ObservableObject {
             switch result {
                 case .success(let token):
                 defaults.setValue(token, forKey: "jsonwebtoken")
+                
                 DispatchQueue.main.async {
                     self.isAuthentication = true
                 }

@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
                 TextField("email", text: $loginVM.email)
                     .textFieldStyle(.roundedBorder)
-                SecureField("password", text: $loginVM.password)
+                TextField("password", text: $loginVM.password)
                     .textFieldStyle(.roundedBorder)
                 Spacer()
                 HStack {
@@ -35,7 +35,8 @@ struct ContentView: View {
                     }
                     .frame(height: 30)
                     Button {
-                        //sign up action
+//                        //sign out action
+//                        loginVM.isAuthentication = false
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
