@@ -41,21 +41,17 @@ class Webservice {
             
             guard let data = data, error == nil else {
                 completion(.failure(.custom(errorMessage: "No data")))
-                print("no data")
                 return
             }
 
             guard let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
                 completion(.failure(.invalidCredentials))
-                print("디코딩 오류")
                 return
             }
             guard let response = response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode < 300 else {
-                print("response error")
+                print(loginResponse.error)
                 return
             }
-//            print(response.value(forHTTPHeaderField: "Via"))
-            
             guard let token = loginResponse.token else {
                 completion(.failure(.invalidCredentials))
                 return
